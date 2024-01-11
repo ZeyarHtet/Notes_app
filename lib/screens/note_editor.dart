@@ -77,11 +77,10 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
           }).then((value) {
             print(value.id);
             Navigator.pop(context);
-          }).catchError(
-              (error) => print(">>>>>>>> $error"));
+          }).catchError((error) => print(">>>>>>>> $error"));
         },
         child: Icon(Icons.save),
       ),
     );
-  }  
+  }
 }
